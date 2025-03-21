@@ -3,7 +3,7 @@ services:
     name: telegram-bot
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -b 0.0.0.0:$PORT bot:app
+    startCommand: python telegram-bot.py
     envVars:
       - key: 7652627861:AAHhq0HUA-15Ig71m-HY7gMp2zhzRkr4wxg
         sync: false
